@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="FidarrApp1.MainPage">
+
+    <StackLayout HorizontalOptions="FillAndExpand" Padding="10" Margin="10" 
+                 VerticalOptions="CenterAndExpand"
+                 Background="Transparent">
+        
+        <Label Text="LOGIN HERE" FontSize="25" FontAttributes="Bold" 
+               TextColor="Tomato" HorizontalOptions="CenterAndExpand">
+
+        </Label>
+        <Entry Keyboard="Email" MaxLength="20" FontSize="12" 
+               BackgroundColor="WhiteSmoke" TextColor="Gray"
+               Placeholder="Email" 
+               HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" 
+               Margin="10">
+
+        </Entry>
+        <Entry Keyboard="Numeric" IsPassword="True" MaxLength="20" FontSize="12" 
+               BackgroundColor="WhiteSmoke" TextColor="Gray"
+               Placeholder="Input Password" 
+               HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" 
+               Margin="10">
+
+        </Entry>
+        <StackLayout Orientation="Horizontal" Spacing="10" Margin="10">
+
+            <Label Text="Forgot Password" FontSize="12" TextColor="Black" 
+                   FontAttributes="Bold" HorizontalOptions="StartAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+
+
+                </Label.GestureRecognizers>
+            </Label>
+            
+            <Label Text="Terms And Conditions" FontSize="12" TextColor="Black"
+                   FontAttributes="Bold" HorizontalOptions="StartAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"></TapGestureRecognizer>
+
+
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+
+
+        <Button BackgroundColor="Black" Text="CLICK ME" CornerRadius="20"
+                FontSize="12" FontAttributes="Bold" TextColor="Tomato" 
+                HorizontalOptions="FillAndExpand">
+
+
+        </Button>
+
+        <Button BackgroundColor="Tomato"  Clicked="Button_Clicked"  Text="Register Here" CornerRadius="20"
+                FontSize="12" FontAttributes="Bold" TextColor="White" 
+                HorizontalOptions="FillAndExpand">
+
+
+        </Button>
+
+
+  </StackLayout>
+
+</ContentPage>

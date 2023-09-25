@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FidarrApp1.OnboardingPage"
+             Title="OnboardingPage">
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Image Source="fidarr.png" Aspect="AspectFill" HeightRequest="200" 
+               Margin="20" />
+
+        <Label Text="Welcome to Fidarr" TextColor="Tomato" FontSize="Title"
+               HorizontalOptions="CenterAndExpand" />
+
+        <Label Text="Discover amazing features and benefits" FontSize="Body" HorizontalOptions="Center" />
+
+        <Button Text="Get Started" BackgroundColor="Tomato" Clicked="Button_Clicked" 
+                HorizontalOptions="Center" Margin="0,20,0,0" />
+    </StackLayout>
+</ContentPage>
